@@ -23,7 +23,7 @@ public class CourseManager {
 			throw new Exception("kurs fiyatý 0 dan küçük olamaz ");
 		}
 		for (Course c : courses) {
-			if (c.getCourseName().contains(c.getCourseName())) {
+			if (c.getCourseName().equals(c.getCourseName())) {
 				throw new Exception("kurs bilgisi ayný olamaz ");
 			}
 		}

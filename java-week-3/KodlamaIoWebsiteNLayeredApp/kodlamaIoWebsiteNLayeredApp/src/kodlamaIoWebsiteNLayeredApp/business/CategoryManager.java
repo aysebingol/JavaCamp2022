@@ -21,7 +21,7 @@ public class CategoryManager {
 	public void add(Category category) throws Exception {
 
 		for (Category ct : categories) {
-			if (ct.getCategoryName().contains(ct.getCategoryName())) {
+			if (ct.getCategoryName().equals(ct.getCategoryName())) {
 				throw new Exception("kategori ismi ayný olamaz");
 			}
 		}
